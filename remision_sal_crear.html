@@ -5,12 +5,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Focus - Bootstrap Admin Dashboard </title>
+    <title>HERMES LogisTIC - WMS</title>
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.png">
-    <!-- Custom Stylesheet -->
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/logowh.png">
+    <link rel="stylesheet" href="./vendor/owl-carousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./vendor/owl-carousel/css/owl.theme.default.min.css">
+    <link href="./vendor/jqvmap/css/jqvmap.min.css" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
-
 </head>
 
 <body>
@@ -40,9 +41,9 @@
         ***********************************-->
         <div class="nav-header">
             <a href="index.html" class="brand-logo">
-                <img class="logo-abbr" src="./images/logo.png" alt="">
-                <img class="logo-compact" src="./images/logo-text.png" alt="">
-                <img class="brand-title" src="./images/logo-text.png" alt="">
+                <img class="logo-abbr" src="./images/logowh.png" alt="">
+                <img class="logo-compact" src="./images/textwh.png" alt="">
+                <img class="brand-title" src="./images/textwh.png" alt="">
             </a>
 
             <div class="nav-control">
@@ -69,7 +70,8 @@
                                 </span>
                                 <div class="dropdown-menu p-0 m-0">
                                     <form>
-                                        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                                        <input class="form-control" type="search" placeholder="Search"
+                                            aria-label="Search">
                                     </form>
                                 </div>
                             </div>
@@ -87,7 +89,8 @@
                                             <span class="success"><i class="ti-user"></i></span>
                                             <div class="media-body">
                                                 <a href="#">
-                                                    <p><strong>Martin</strong> has added a <strong>customer</strong> Successfully
+                                                    <p><strong>Despachos</strong> ha realizado despacho a  <strong>Zona sur</strong>
+                                                        exitosamente
                                                     </p>
                                                 </a>
                                             </div>
@@ -97,7 +100,7 @@
                                             <span class="primary"><i class="ti-shopping-cart"></i></span>
                                             <div class="media-body">
                                                 <a href="#">
-                                                    <p><strong>Jennifer</strong> purchased Light Dashboard 2.0.</p>
+                                                    <p><strong>Entradas</strong> ha realizado entrado <strong>001</strong </p>
                                                 </a>
                                             </div>
                                             <span class="notify-time">3:20 am</span>
@@ -106,31 +109,13 @@
                                             <span class="danger"><i class="ti-bookmark"></i></span>
                                             <div class="media-body">
                                                 <a href="#">
-                                                    <p><strong>Robin</strong> marked a <strong>ticket</strong> as unsolved.
+                                                    <p><strong>Zona de Almacenamiento</strong> ha actualizado la ubicación <strong>01031223</strong> as
+                                                        en su categoria.
                                                     </p>
                                                 </a>
                                             </div>
                                             <span class="notify-time">3:20 am</span>
-                                        </li>
-                                        <li class="media dropdown-item">
-                                            <span class="primary"><i class="ti-heart"></i></span>
-                                            <div class="media-body">
-                                                <a href="#">
-                                                    <p><strong>David</strong> purchased Light Dashboard 1.0.</p>
-                                                </a>
-                                            </div>
-                                            <span class="notify-time">3:20 am</span>
-                                        </li>
-                                        <li class="media dropdown-item">
-                                            <span class="success"><i class="ti-image"></i></span>
-                                            <div class="media-body">
-                                                <a href="#">
-                                                    <p><strong> James.</strong> has added a<strong>customer</strong> Successfully
-                                                    </p>
-                                                </a>
-                                            </div>
-                                            <span class="notify-time">3:20 am</span>
-                                        </li>
+                                        </li>                                        
                                     </ul>
                                     <a class="all-notification" href="#">See all notifications <i
                                             class="ti-arrow-right"></i></a>
@@ -141,13 +126,10 @@
                                     <i class="mdi mdi-account"></i>
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-right">
-                                    <a href="./app-profile.html" class="dropdown-item">
-                                        <i class="icon-user"></i>
-                                        <span class="ml-2">Profile </span>
-                                    </a>
-                                    <a href="./email-inbox.html" class="dropdown-item">
+                                    
+                                    <a href="./page-login.html" class="dropdown-item">
                                         <i class="icon-envelope-open"></i>
-                                        <span class="ml-2">Inbox </span>
+                                        <span class="ml-2">Login </span>
                                     </a>
                                     <a href="./page-login.html" class="dropdown-item">
                                         <i class="icon-key"></i>
@@ -170,116 +152,79 @@
         <div class="quixnav">
             <div class="quixnav-scroll">
                 <ul class="metismenu" id="menu">
-                    <li class="nav-label first">Main Menu</li>
+                    <li class="nav-label first">Administración</li>
                     <!-- <li><a href="index.html"><i class="icon icon-single-04"></i><span class="nav-text">Dashboard</span></a>
                     </li> -->
                     <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
-                                class="icon icon-single-04"></i><span class="nav-text">Dashboard</span></a>
+                                class="icon icon-phone-2"></i><span class="nav-text">Sesión</span></a>
                         <ul aria-expanded="false">
-                            <li><a href="./index.html">Dashboard 1</a></li>
-                            <li><a href="./index2.html">Dashboard 2</a></li></ul>
-                    </li>
-                    
-                    <li class="nav-label">Apps</li>
-                    <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
-                                class="icon icon-app-store"></i><span class="nav-text">Apps</span></a>
-                        <ul aria-expanded="false">
-                            <li><a href="./app-profile.html">Profile</a></li>
-                            <li><a class="has-arrow" href="javascript:void()" aria-expanded="false">Email</a>
-                                <ul aria-expanded="false">
-                                    <li><a href="./email-compose.html">Compose</a></li>
-                                    <li><a href="./email-inbox.html">Inbox</a></li>
-                                    <li><a href="./email-read.html">Read</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="./app-calender.html">Calendar</a></li>
-                        </ul>
-                    </li>
-                    <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
-                                class="icon icon-chart-bar-33"></i><span class="nav-text">Charts</span></a>
-                        <ul aria-expanded="false">
-                            <li><a href="./chart-flot.html">Flot</a></li>
-                            <li><a href="./chart-morris.html">Morris</a></li>
-                            <li><a href="./chart-chartjs.html">Chartjs</a></li>
-                            <li><a href="./chart-chartist.html">Chartist</a></li>
-                            <li><a href="./chart-sparkline.html">Sparkline</a></li>
-                            <li><a href="./chart-peity.html">Peity</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-label">Components</li>
-                    <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
-                                class="icon icon-world-2"></i><span class="nav-text">Bootstrap</span></a>
-                        <ul aria-expanded="false">
-                            <li><a href="./ui-accordion.html">Accordion</a></li>
-                            <li><a href="./ui-alert.html">Alert</a></li>
-                            <li><a href="./ui-badge.html">Badge</a></li>
-                            <li><a href="./ui-button.html">Button</a></li>
-                            <li><a href="./ui-modal.html">Modal</a></li>
-                            <li><a href="./ui-button-group.html">Button Group</a></li>
-                            <li><a href="./ui-list-group.html">List Group</a></li>
-                            <li><a href="./ui-media-object.html">Media Object</a></li>
-                            <li><a href="./ui-card.html">Cards</a></li>
-                            <li><a href="./ui-carousel.html">Carousel</a></li>
-                            <li><a href="./ui-dropdown.html">Dropdown</a></li>
-                            <li><a href="./ui-popover.html">Popover</a></li>
-                            <li><a href="./ui-progressbar.html">Progressbar</a></li>
-                            <li><a href="./ui-tab.html">Tab</a></li>
-                            <li><a href="./ui-typography.html">Typography</a></li>
-                            <li><a href="./ui-pagination.html">Pagination</a></li>
-                            <li><a href="./ui-grid.html">Grid</a></li>
-
-                        </ul>
-                    </li>
-
-                    <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
-                                class="icon icon-plug"></i><span class="nav-text">Plugins</span></a>
-                        <ul aria-expanded="false">
-                            <li><a href="./uc-select2.html">Select 2</a></li>
-                            <li><a href="./uc-nestable.html">Nestedable</a></li>
-                            <li><a href="./uc-noui-slider.html">Noui Slider</a></li>
-                            <li><a href="./uc-sweetalert.html">Sweet Alert</a></li>
-                            <li><a href="./uc-toastr.html">Toastr</a></li>
-                            <li><a href="./map-jqvmap.html">Jqv Map</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="widget-basic.html" aria-expanded="false"><i class="icon icon-globe-2"></i><span
-                                class="nav-text">Widget</span></a></li>
-                    <li class="nav-label">Forms</li>
-                    <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
-                                class="icon icon-form"></i><span class="nav-text">Forms</span></a>
-                        <ul aria-expanded="false">
-                            <li><a href="./form-element.html">Form Elements</a></li>
-                            <li><a href="./form-wizard.html">Wizard</a></li>
-                            <li><a href="./form-editor-summernote.html">Summernote</a></li>
-                            <li><a href="form-pickers.html">Pickers</a></li>
-                            <li><a href="form-validation-jquery.html">Jquery Validate</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-label">Table</li>
-                    <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
-                                class="icon icon-layout-25"></i><span class="nav-text">Table</span></a>
-                        <ul aria-expanded="false">
-                            <li><a href="table-bootstrap-basic.html">Bootstrap</a></li>
-                            <li><a href="table-datatable-basic.html">Datatable</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="nav-label">Extra</li>
-                    <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
-                                class="icon icon-single-copy-06"></i><span class="nav-text">Pages</span></a>
-                        <ul aria-expanded="false">
-                            <li><a href="./page-register.html">Register</a></li>
                             <li><a href="./page-login.html">Login</a></li>
-                            <li><a class="has-arrow" href="javascript:void()" aria-expanded="false">Error</a>
-                                <ul aria-expanded="false">
-                                    <li><a href="./page-error-400.html">Error 400</a></li>
-                                    <li><a href="./page-error-403.html">Error 403</a></li>
-                                    <li><a href="./page-error-404.html">Error 404</a></li>
-                                    <li><a href="./page-error-500.html">Error 500</a></li>
-                                    <li><a href="./page-error-503.html">Error 503</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="./page-lock-screen.html">Lock Screen</a></li>
+                            <li><a href="./page-lock-screen.html">Logout</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
+                                class="icon icon-single-04"></i><span class="nav-text">Usuarios</span></a>
+                        <ul aria-expanded="false">
+                            <li><a href="./usuario_registrar.html">Nuevo</a></li>
+                            <li><a href="./usuario_mantener.html">Modificar</a></li>
+                        </ul>
+                    </li>
+                    <!--<li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
+                                class="icon icon-l-settings"></i><span class="nav-text">Roles</span></a>
+                        <ul aria-expanded="false">
+                            <li><a href="./index.html">Actualizar</a></li>
+                            <li><a href="./index2.html">Listar</a></li>
+                        </ul>
+                    </li>-->
+
+                    <li class="nav-label">Configuración</li>
+                    <li><a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon icon-app-store"></i>
+                            <span class="nav-text">Productos</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="./productos_crear.html">Nuevo</a></li>
+                            <li><a href="./productos_mantener.html">Modificar</a></li>
+                            <li><a href="./productos_listar.html">Listar</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
+                                class="icon icon-users-mm-2"></i><span class="nav-text">Cliente - Proveedor</span></a>
+                        <ul aria-expanded="false">
+                            <li><a href="./clientes_crear.html">Nuevo</a></li>
+                            <li><a href="./clientes_mantener.html">Modificar</a></li>
+                            <li><a href="./clientes_listar.html">Listar</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
+                                class="icon icon-cart-simple"></i><span class="nav-text">Zona Almacenamiento</span></a>
+                        <ul aria-expanded="false">
+                            <li><a href="./ubicacion_crear.html">Nuevo</a></li>
+                            <li><a href="./ubicacion_mantener.html">Modificar</a></li>
+                            <li><a href="./ubicacion_listar.html">Listar</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-label">Gestión</li>
+                    <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
+                                class="icon icon-cloud-download-95"></i><span class="nav-text">Entradas</span></a>
+                        <ul aria-expanded="false">
+                            <li><a href="./remision_ent_crear.html">Nuevo</a></li>
+                            <li><a href="./remision_ent_listar.html">Listar</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
+                                class="icon icon-send"></i><span class="nav-text">Salidas</span></a>
+                        <ul aria-expanded="false">
+                            <li><a href="./remision_sal_crear.html">Nuevo</a></li>
+                            <li><a href="./remision_sal_listar.html">Listar</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
+                                class="icon icon-world-2"></i><span class="nav-text">Despachos</span></a>
+                        <ul aria-expanded="false">
+                            <li><a href="./despachos_crear.html">Nuevo</a></li>
+                            <li><a href="./despachos_listar.html">Listar</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -297,14 +242,15 @@
                 <div class="row page-titles mx-0">
                     <div class="col-sm-6 p-md-0">
                         <div class="welcome-text">
-                            <h4>Hi, welcome back!</h4>
-                            <span class="ml-1">Element</span>
+                            <h4>Gestión de Salidas</h4>
+                            <span class="ml-1">Nueva Salida</span>
                         </div>
                     </div>
                     <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="javascript:void(0)">Form</a></li>
-                            <li class="breadcrumb-item active"><a href="javascript:void(0)">Element</a></li>
+                            <li class="breadcrumb-item"><a href="javascript:void(0)">Gestión</a></li>
+                            <li class="breadcrumb-item"><a href="javascript:void(0)">Salidas</a></li>
+                            <li class="breadcrumb-item active"><a href="javascript:void(0)">Nueva Salida</a></li>
                         </ol>
                     </div>
                 </div>
@@ -313,16 +259,179 @@
                     <div class="col-xl-6 col-xxl-12">
                         <div class="card">
                             <div class="card-header">
+                                <h4 class="card-title">Remisión Salida</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="basic-form">
+                                    <form>
+                                        <div class="form-row">
+                                            <div class="col-sm-7">
+                                                <label>Id Remisión</label>
+                                                <input type="text" class="form-control" placeholder="0001" disabled>
+                                            </div>
+                                            <div class="col mt-2 mt-sm-0">
+                                                <label>Fecha</label>
+                                                <input type="text" class="form-control" placeholder="01/01/1999" disabled>
+                                            </div>
+                                            <div class="col mt-2 mt-sm-0">
+                                                <label>Hora</label>
+                                                <input type="text" class="form-control" placeholder="12:00 p.m." disabled>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Cliente</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="basic-form">
+                                    <form>
+                                        <div class="form-row">
+                                            <div class="form-group col-md-12">
+                                                <label>Id Cliente</label>
+                                                <input type="text" disabled class="form-control" placeholder="1234">
+                                            </div>
+                                            <div class="form-group col-md-3">
+                                                <label>Identificación</label>
+                                                <input type="text" class="form-control" placeholder="900323456-8">
+                                            </div>
+                                            <div class="form-group col-md-3">
+                                                <label>Tipo Identificación</label>
+                                                <select class="form-control" id="sel1">
+                                                    <option>CC  Cédula de Ciudadanía</option>
+                                                    <option>NIT Número de Ident. Tributaria</option>
+                                                    <option>PS  Pasaporte</option>
+                                                    <option>CE Cédula de Extranjería</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group col-md-3">
+                                                <label>Nombre</label>
+                                                <input type="text" class="form-control" placeholder="Empresa S.A.S">
+                                            </div>                                             
+                                            <div class="form-group col-md-3">
+                                                <label>Dirección</label>
+                                                <input type="text" class="form-control" placeholder="Cra 1 # 2 - 3">
+                                            </div>                                            
+                                        </div>                            
+                                        
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Productos</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered table-striped verticle-middle table-responsive-sm">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Id. Prod</th>
+                                                <th scope="col">Nombre</th>
+                                                <th scope="col">Cantidad</th>
+                                                <th scope="col">U.M.</th>
+                                                <th scope="col">Ubicación</th>
+                                                <th scope="col">Despachado</th>
+                                                <th scope="col">Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <input type="text" class="form-control" placeholder="0004">
+                                                </td>
+                                                <td>
+                                                    producto
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control" placeholder="0">
+                                                </td>
+                                                <td>
+                                                    Gramos
+                                                </td>
+                                                <td>
+                                                    zz.ll.nn.ub
+                                                </td>
+                                                <td><span class="badge badge-danger"><i class="fa fa-close"></i></span>
+                                                <td><span><a href="javascript:void()" class="mr-4" data-toggle="tooltip" data-placement="top" title="Edit"><i class="fa fa-save color-muted"></i> </a><a href="javascript:void()" data-toggle="tooltip" data-placement="top" title="Close"><i class="fa fa-close color-danger"></i></a></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>001</td>
+                                                <td>
+                                                    Café
+                                                </td>
+                                                <td>200</td>
+                                                <td>libras</td>
+                                                <td>12.23.45.67</td>
+                                                <td><span class="badge badge-success"><i class="fa fa-check"></i></span>
+                                                <td><span><a href="javascript:void()" class="mr-4" data-toggle="tooltip" data-placement="top" title="Edit"><i class="fa fa-pencil color-muted"></i> </a><a href="javascript:void()" data-toggle="tooltip" data-placement="top" title="Close"><i class="fa fa-close color-danger"></i></a></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>002</td>
+                                                <td>
+                                                    Salmón
+                                                </td>
+                                                <td>50</td>
+                                                <td>libras</td>
+                                                <td>12.23.45.68</td>
+                                                <td><span class="badge badge-danger"><i class="fa fa-close "></i></span>
+                                                <td><span><a href="javascript:void()" class="mr-4" data-toggle="tooltip" data-placement="top" title="Edit"><i class="fa fa-pencil color-muted"></i> </a><a href="javascript:void()" data-toggle="tooltip" data-placement="top" title="Close"><i class="fa fa-close color-danger"></i></a></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>003</td>
+                                                <td>
+                                                    Vino Tinto
+                                                </td>
+                                                <td>20</td>
+                                                <td>botella</td>
+                                                <td>12.23.46.70;12.23.46.71</td>
+                                                <td><span class="badge badge-danger"><i class="fa fa-close "></i></span>
+                                                <td><span><a href="javascript:void()" class="mr-4" data-toggle="tooltip" data-placement="top" title="Edit"><i class="fa fa-pencil color-muted"></i> </a><a href="javascript:void()" data-toggle="tooltip" data-placement="top" title="Close"><i class="fa fa-close color-danger"></i></a></span>
+                                                </td>
+                                            </tr>
+                                            
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <button type="button" class="btn btn-success">Crear
+                                    <span class="btn-icon-right">
+                                        <i class="fa fa-check"></i>
+                                    </span>
+                                </button>
+                                <button type="button" class="btn btn-warning">Actualizar <span
+                                        class="btn-icon-right"><i class="fa fa-star"></i></span>
+                                </button>
+                                <button type="button" class="btn btn-danger">Limpiar <span
+                                        class="btn-icon-right"><i class="fa fa-close"></i></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--    <div class="card">
+                            <div class="card-header">
                                 <h4 class="card-title">Input Style</h4>
                             </div>
                             <div class="card-body">
                                 <div class="basic-form">
                                     <form>
                                         <div class="form-group">
-                                            <input type="text" class="form-control input-default " placeholder="input-default">
+                                            <input type="text" class="form-control input-default "
+                                                placeholder="input-default">
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control input-rounded" placeholder="input-rounded">
+                                            <input type="text" class="form-control input-rounded"
+                                                placeholder="input-rounded">
                                         </div>
                                     </form>
                                 </div>
@@ -350,13 +459,15 @@
                                 <div class="basic-form">
                                     <form>
                                         <div class="form-group">
-                                            <input class="form-control form-control-lg" type="text" placeholder="form-control-lg">
+                                            <input class="form-control form-control-lg" type="text"
+                                                placeholder="form-control-lg">
                                         </div>
                                         <div class="form-group">
                                             <input class="form-control" type="text" placeholder="Default input">
                                         </div>
                                         <div class="form-group">
-                                            <input class="form-control form-control-sm" type="text" placeholder="form-control-sm">
+                                            <input class="form-control form-control-sm" type="text"
+                                                placeholder="form-control-sm">
                                         </div>
                                     </form>
                                 </div>
@@ -424,60 +535,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card">
-                            <div class="card-header">
-                                <h4 class="card-title">Horizontal Form</h4>
-                            </div>
-                            <div class="card-body">
-                                <div class="basic-form">
-                                    <form>
 
-                                        <div class="form-row">
-                                            <div class="form-group col-md-6">
-                                                <label>First Name</label>
-                                                <input type="text" class="form-control" placeholder="1234 Main St">
-                                            </div>
-                                            <div class="form-group col-md-6">
-                                                <label>Email</label>
-                                                <input type="email" class="form-control" placeholder="Email">
-                                            </div>
-                                            <div class="form-group col-md-6">
-                                                <label>Password</label>
-                                                <input type="password" class="form-control" placeholder="Password">
-                                            </div>
-                                            <div class="form-group col-md-6">
-                                                <label>City</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="form-row">
-                                            <div class="form-group col-md-4">
-                                                <label>State</label>
-                                                <select id="inputState" class="form-control">
-                                                    <option selected>Choose...</option>
-                                                    <option>Option 1</option>
-                                                    <option>Option 2</option>
-                                                    <option>Option 3</option>
-                                                </select>
-                                            </div>
-                                            <div class="form-group col-md-2">
-                                                <label>Zip</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox">
-                                                <label class="form-check-label">
-                                                    Check me out
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <button type="submit" class="btn btn-primary">Sign in</button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
                         <div class="card">
                             <div class="card-header">
                                 <h4 class="card-title">Vertical Form</h4>
@@ -502,19 +560,22 @@
                                                 <label class="col-form-label col-sm-2 pt-0">Radios</label>
                                                 <div class="col-sm-10">
                                                     <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="gridRadios" value="option1" checked>
+                                                        <input class="form-check-input" type="radio" name="gridRadios"
+                                                            value="option1" checked>
                                                         <label class="form-check-label">
                                                             First radio
                                                         </label>
                                                     </div>
                                                     <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="gridRadios" value="option2">
+                                                        <input class="form-check-input" type="radio" name="gridRadios"
+                                                            value="option2">
                                                         <label class="form-check-label">
                                                             Second radio
                                                         </label>
                                                     </div>
                                                     <div class="form-check disabled">
-                                                        <input class="form-check-input" type="radio" name="gridRadios" value="option3" disabled>
+                                                        <input class="form-check-input" type="radio" name="gridRadios"
+                                                            value="option3" disabled>
                                                         <label class="form-check-label">
                                                             Third disabled radio
                                                         </label>
@@ -551,7 +612,8 @@
                                     <form>
                                         <div class="form-group">
                                             <div class="form-check mb-2">
-                                                <input type="checkbox" class="form-check-input" id="check1" value="" checked>
+                                                <input type="checkbox" class="form-check-input" id="check1" value=""
+                                                    checked>
                                                 <label class="form-check-label" for="check1">Option 1</label>
                                             </div>
                                             <div class="form-check mb-2">
@@ -559,7 +621,8 @@
                                                 <label class="form-check-label" for="check2">Option 2</label>
                                             </div>
                                             <div class="form-check disabled">
-                                                <input type="checkbox" class="form-check-input" id="check3" value="" disabled>
+                                                <input type="checkbox" class="form-check-input" id="check3" value=""
+                                                    disabled>
                                                 <label class="form-check-label" for="check3">Disabled</label>
                                             </div>
                                         </div>
@@ -649,12 +712,14 @@
                                 <div class="basic-form">
                                     <form>
                                         <div class="form-group">
-                                            <input class="form-control" type="text" placeholder="Readonly input here…" readonly>
+                                            <input class="form-control" type="text" placeholder="Readonly input here…"
+                                                readonly>
                                         </div>
                                         <div class="form-group row">
                                             <label class="col-sm-3 col-form-label">Email</label>
                                             <div class="col-sm-9">
-                                                <input type="text" readonly class="form-control-plaintext" value="email@example.com">
+                                                <input type="text" readonly class="form-control-plaintext"
+                                                    value="email@example.com">
                                             </div>
                                         </div>
                                         <div class="form-group row">
@@ -676,7 +741,8 @@
                                     <form class="form-inline">
                                         <div class="form-group mb-2">
                                             <label class="sr-only">Email</label>
-                                            <input type="text" readonly class="form-control-plaintext" value="email@example.com">
+                                            <input type="text" readonly class="form-control-plaintext"
+                                                value="email@example.com">
                                         </div>
                                         <div class="form-group mx-sm-3 mb-2">
                                             <label class="sr-only">Password</label>
@@ -735,7 +801,8 @@
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label col-form-label-sm">Email</label>
                                             <div class="col-sm-10">
-                                                <input type="email" class="form-control form-control-sm" placeholder="col-form-label-sm">
+                                                <input type="email" class="form-control form-control-sm"
+                                                    placeholder="col-form-label-sm">
                                             </div>
                                         </div>
                                         <div class="form-group row">
@@ -747,7 +814,8 @@
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label col-form-label-lg">Email</label>
                                             <div class="col-sm-10">
-                                                <input type="email" class="form-control form-control-lg" placeholder="col-form-label-lg">
+                                                <input type="email" class="form-control form-control-lg"
+                                                    placeholder="col-form-label-lg">
                                             </div>
                                         </div>
                                     </form>
@@ -1068,7 +1136,8 @@
                                     <form action="#">
                                         <div class="input-group mb-3">
                                             <div class="input-group-prepend">
-                                                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown</button>
+                                                <button class="btn btn-primary dropdown-toggle" type="button"
+                                                    data-toggle="dropdown">Dropdown</button>
                                                 <div class="dropdown-menu">
                                                     <a class="dropdown-item" href="#">Action</a>
                                                     <a class="dropdown-item" href="#">Another action</a>
@@ -1083,7 +1152,8 @@
                                         <div class="input-group">
                                             <input type="text" class="form-control">
                                             <div class="input-group-append">
-                                                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown</button>
+                                                <button class="btn btn-primary dropdown-toggle" type="button"
+                                                    data-toggle="dropdown">Dropdown</button>
                                                 <div class="dropdown-menu">
                                                     <a class="dropdown-item" href="#">Action</a>
                                                     <a class="dropdown-item" href="#">Another action</a>
@@ -1107,7 +1177,9 @@
                                         <div class="input-group mb-3">
                                             <div class="input-group-prepend">
                                                 <button type="button" class="btn btn-primary">Action</button>
-                                                <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+                                                <button type="button"
+                                                    class="btn btn-primary dropdown-toggle dropdown-toggle-split"
+                                                    data-toggle="dropdown">
                                                     <span class="sr-only">Toggle Dropdown</span>
                                                 </button>
                                                 <div class="dropdown-menu">
@@ -1125,7 +1197,9 @@
                                             <input type="text" class="form-control">
                                             <div class="input-group-append">
                                                 <button type="button" class="btn btn-primary">Action</button>
-                                                <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+                                                <button type="button"
+                                                    class="btn btn-primary dropdown-toggle dropdown-toggle-split"
+                                                    data-toggle="dropdown">
                                                     <span class="sr-only">Toggle Dropdown</span>
                                                 </button>
                                                 <div class="dropdown-menu">
@@ -1249,7 +1323,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
                 </div>
             </div>
         </div>
@@ -1263,7 +1337,7 @@
         ***********************************-->
         <div class="footer">
             <div class="copyright">
-                <p>Copyright © Designed &amp; Developed by <a href="#" target="_blank">Quixkit</a> 2019</p>
+                <p>Copyright © Designed &amp; Developed by <a href="#" target="_blank">Grupo 05 MINTIC</a> 2021</p>
             </div>
         </div>
         <!--**********************************
@@ -1278,7 +1352,7 @@
            Support ticket button end
         ***********************************-->
 
-        
+
     </div>
     <!--**********************************
         Main wrapper end
@@ -1291,7 +1365,7 @@
     <script src="./vendor/global/global.min.js"></script>
     <script src="./js/quixnav-init.js"></script>
     <script src="./js/custom.min.js"></script>
-    
+
 </body>
 
 </html>

@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Hermes LogisTIC - Listado de despachos </title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.png">
+    <!-- Custom Stylesheet -->
+    <link href="./css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!--*******************
+        Preloader start
+    ********************-->
+    <div id="preloader">
+        <div class="sk-three-bounce">
+            <div class="sk-child sk-bounce1"></div>
+            <div class="sk-child sk-bounce2"></div>
+            <div class="sk-child sk-bounce3"></div>
+        </div>
+    </div>
+    <!--*******************
+        Preloader end
+    ********************-->
+
+
+    <!--**********************************
+        Main wrapper start
+    ***********************************-->
+    <div id="main-wrapper">
+
+        <!--**********************************
+            Nav header start
+        ***********************************-->
+        <div class="nav-header">
+            <a href="index.html" class="brand-logo">
+                <img class="logo-abbr" src="./images/logotic5.png" alt="">
+                <img class="logo-compact" src="./images/logotic5.png" alt="">
+                <img class="brand-title" src="./images/logotic5.png" alt="">
+            </a>
+
+            <div class="nav-control">
+                <div class="hamburger">
+                    <span class="line"></span><span class="line"></span><span class="line"></span>
+                </div>
+            </div>
+        </div>
+        <!--**********************************
+            Nav header end
+        ***********************************-->
+
+        <!--**********************************
+            Header start
+        ***********************************-->
+        <div class="header">
+            <div class="header-content">
+                <nav class="navbar navbar-expand">
+                    <div class="collapse navbar-collapse justify-content-between">
+                        <div class="header-left">
+                            <div class="search_bar dropdown">
+                                <span class="search_icon p-3 c-pointer" data-toggle="dropdown">
+                                    <i class="mdi mdi-magnify"></i>
+                                </span>
+                                <div class="dropdown-menu p-0 m-0">
+                                    <form>
+                                        <input class="form-control" type="search" placeholder="Search"
+                                            aria-label="Search">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <ul class="navbar-nav header-right">
+                            <li class="nav-item dropdown notification_dropdown">
+                                <a class="nav-link" href="#" role="button" data-toggle="dropdown">
+                                    <i class="mdi mdi-bell"></i>
+                                    <div class="pulse-css"></div>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <ul class="list-unstyled">
+                                        <li class="media dropdown-item">
+                                            <span class="success"><i class="ti-user"></i></span>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <p><strong>Martin</strong> has added a <strong>customer</strong>
+                                                        Successfully
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <span class="notify-time">3:20 am</span>
+                                        </li>
+                                        <li class="media dropdown-item">
+                                            <span class="primary"><i class="ti-shopping-cart"></i></span>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <p><strong>Jennifer</strong> purchased Light Dashboard 2.0.</p>
+                                                </a>
+                                            </div>
+                                            <span class="notify-time">3:20 am</span>
+                                        </li>
+                                        <li class="media dropdown-item">
+                                            <span class="danger"><i class="ti-bookmark"></i></span>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <p><strong>Robin</strong> marked a <strong>ticket</strong> as
+                                                        unsolved.
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <span class="notify-time">3:20 am</span>
+                                        </li>
+                                        <li class="media dropdown-item">
+                                            <span class="primary"><i class="ti-heart"></i></span>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <p><strong>David</strong> purchased Light Dashboard 1.0.</p>
+                                                </a>
+                                            </div>
+                                            <span class="notify-time">3:20 am</span>
+                                        </li>
+                                        <li class="media dropdown-item">
+                                            <span class="success"><i class="ti-image"></i></span>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <p><strong> James.</strong> has added a<strong>customer</strong>
+                                                        Successfully
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <span class="notify-time">3:20 am</span>
+                                        </li>
+                                    </ul>
+                                    <a class="all-notification" href="#">See all notifications <i
+                                            class="ti-arrow-right"></i></a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown header-profile">
+                                <a class="nav-link" href="#" role="button" data-toggle="dropdown">
+                                    <i class="mdi mdi-account"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a href="./app-profile.html" class="dropdown-item">
+                                        <i class="icon-user"></i>
+                                        <span class="ml-2">Profile </span>
+                                    </a>
+                                    <a href="./email-inbox.html" class="dropdown-item">
+                                        <i class="icon-envelope-open"></i>
+                                        <span class="ml-2">Inbox </span>
+                                    </a>
+                                    <a href="./page-login.html" class="dropdown-item">
+                                        <i class="icon-key"></i>
+                                        <span class="ml-2">Logout </span>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!--**********************************
+            Header end ti-comment-alt
+        ***********************************-->
+
+        <!--**********************************
+            Sidebar start
+        ***********************************-->
+        <div class="quixnav">
+            <div class="quixnav-scroll">
+                <ul class="metismenu" id="menu">
+                    <li class="nav-label first">Administración</li>
+                    <!-- <li><a href="index.html"><i class="icon icon-single-04"></i><span class="nav-text">Dashboard</span></a>
+                    </li> -->
+                    <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
+                                class="icon icon-single-04"></i><span class="nav-text">Usuarios</span></a>
+                        <ul aria-expanded="false">
+                            <li><a href="./usuario_registrar.html">Registro</a></li>
+                            <li><a href="./usuario_mantener.html">Actualizar</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-label">Configuración</li>
+                    <li><a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon icon-app-store"></i>
+                            <span class="nav-text">Productos</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="./productos_crear.html">Crear</a></li>
+                            <li><a href="./productos_mantener.html">Mantenimiento</a></li>
+                            <li><a href="./productos_listar.html">Listar</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
+                                class="icon icon-users-mm-2"></i><span class="nav-text">Cliente-Proveedor</span></a>
+                        <ul aria-expanded="false">
+                            <li><a href="./clientes_crear.html">Crear</a></li>
+                            <li><a href="./clientes_mantener.html">Mantenimiento</a></li>
+                            <li><a href="./clientes_listar.html">Listar</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
+                                class="icon icon-cart-simple"></i><span class="nav-text">Zona Almacenamiento</span></a>
+                        <ul aria-expanded="false">
+                            <li><a href="./ubicacion_crear.html">Crear</a></li>
+                            <li><a href="./ubicacion_mantener.html">Mantenimiento</a></li>
+                            <li><a href="./ubicacion_listar.html">Listar</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-label">Gestión</li>
+                    <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
+                                class="icon icon-cloud-download-95"></i><span class="nav-text">Entradas</span></a>
+                        <ul aria-expanded="false">
+                            <li><a href="./remision_ent_crear.html">Crear</a></li>
+                            <li><a href="./remision_ent_listar.html">listar</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
+                                class="icon icon-send"></i><span class="nav-text">Salidas</span></a>
+                        <ul aria-expanded="false">
+                            <li><a href="./remision_sal_crear.html">Crear</a></li>
+                            <li><a href="./remision_sal_listar.html">Listar</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
+                                class="icon icon-world-2"></i><span class="nav-text">Despachos</span></a>
+                        <ul aria-expanded="false">
+                            <li><a href="./despachos_crear.html">Crear</a></li>
+                            <li><a href="./despachos_listar.html">Listar</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-label">Extra</li>
+                    <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
+                                class="icon icon-phone-2"></i><span class="nav-text">Sesión</span></a>
+                        <ul aria-expanded="false">
+                            <li><a href="./page-login.html">Login</a></li>
+                            <li><a href="./page-lock-screen.html">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--**********************************
+            Sidebar end
+        ***********************************-->
+
+        <!--**********************************
+            Content body start
+        ***********************************-->
+        <div class="content-body">
+            <div class="container-fluid">
+                <div class="row page-titles mx-0">
+                    <div class="col-sm-6 p-md-0">
+                        <div class="welcome-text">
+                            <h4>Despachos generados</h4>
+                            <span class="ml-1">Listado</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="javascript:void(0)">Gestión</a></li>
+                            <li class="breadcrumb-item"><a href="javascript:void(0)">Despachos</a></li>
+                            <li class="breadcrumb-item active"><a href="javascript:void(0)">Listar</a></li>
+                        </ol>
+                    </div>
+                </div>
+                <!-- row -->
+                <div class="row">
+                    <div class="col-xl-6 col-xxl-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="card-title">Lista de despachos</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="basic-form">
+                                    <form>
+                                        <div class="form-row">
+                                            
+                                            <div class="col-12">
+                                                <div class="card">
+                                                    <div class="card-header">
+                                                        <h4>Despachos generados</h4>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <div class="table-responsive">
+                                                            <table id="example2" class="display" style="width:100%">
+
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>IdDespacho</th>
+                                                                        <th>Fecha</th>
+                                                                        <th>Ciudad</th>
+                                                                        <th>Placa camión</th>
+                                                                        <th>Conductor</th>
+                                                                        <th></th>
+
+                                                                    </tr>
+                                                                </thead>
+
+                                                                <tr>
+                                                                    <td>1234</td>
+                                                                    <td>12-09-2021</td>
+                                                                    <td>Barranquilla</td>
+                                                                    <td>ABC123</td>
+                                                                    <td>Andrés Guzmán</td>
+                                                                    
+                                                                    <td>
+                                                                        <button type="button" class="btn btn-success btn-sm" title="Seleccionar">
+                                                                            <i class="fa fa-check" size="small"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>1234</td>
+                                                                    <td>12-09-2021</td>
+                                                                    <td>Bucaramanga</td>
+                                                                    <td>ABC123</td>
+                                                                    <td>Marisela Ramos</td>
+                                                                    
+                                                                    <td>
+                                                                        <button type="button" class="btn btn-success btn-sm" title="Seleccionar">
+                                                                            <i class="fa fa-check" size="small"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12">
+                                                <div class="card">
+                                                    <div class="card-header">
+                                                        <h4>Remisiones incluidas en el despacho</h4>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <div class="table-responsive">
+                                                            <table id="example2" class="display" style="width:100%">
+
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>IdRemision</th>
+                                                                        <th>Fecha</th>
+                                                                        <th>IdCliente</th>
+                                                                        <th>Nombre</th>
+                                                                        <th>Apellido</th>
+                                                                        <th>Dirección</th>
+                                                                        <th>Celular</th>
+                                                                        <th>Ciudad</th>
+                                                                        <th>Departamento</th>
+                                                                        <th>Entregado</th>
+
+                                                                    </tr>
+                                                                </thead>
+
+                                                                <tr>
+                                                                    <td>1234</td>
+                                                                    <td>12-09-2021</td>
+                                                                    <td>78654321</td>
+                                                                    <td>Gabriela</td>
+                                                                    <td>Suárez</td>
+                                                                    <td>Carrera 56 #12-45</td>
+                                                                    <td>300000000</td>
+                                                                    <td>Barranquilla</td>
+                                                                    <td>Atlántico</td>
+                                                                    <td align="center">
+                                                                        <input class="form-check-input" type="checkbox" >
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>                                                                                     
+                                                            
+                                            
+                                        </div>
+
+                                        
+                                        <button type="button" class="btn btn-warning">Actualizar <span
+                                                class="btn-icon-right"><i class="fa fa-star"></i></span>
+                                        </button>
+                                        <button type="button" class="btn btn-danger">Limpiar <span
+                                                class="btn-icon-right"><i class="fa fa-close"></i></span>
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>-->
+    </div>
+    </div>
+    </div>
+    </div>
+    <!--**********************************
+            Content body end
+        ***********************************-->
+
+
+    <!--**********************************
+            Footer start
+        ***********************************-->
+    <div class="footer">
+        <div class="copyright">
+            <p>Copyright © Designed &amp; Developed by <a href="#" target="_blank">Grupo 05 MINTIC</a> 2021</p>
+        </div>
+    </div>
+    <!--**********************************
+            Footer end
+        ***********************************-->
+
+    <!--**********************************
+           Support ticket button start
+        ***********************************-->
+
+    <!--**********************************
+           Support ticket button end
+        ***********************************-->
+
+
+    </div>
+    <!--**********************************
+        Main wrapper end
+    ***********************************-->
+
+    <!--**********************************
+        Scripts
+    ***********************************-->
+    <!-- Required vendors -->
+    <script src="./vendor/global/global.min.js"></script>
+    <script src="./js/quixnav-init.js"></script>
+    <script src="./js/custom.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"> </script>
+    <script nomodule src="https: // unpkg .com / ionicons @ 5.5.2 / dist / ionicons / ionicons.js "> </script>
+
+    <script src="./vendor/highlightjs/highlight.pack.min.js"></script>
+    <!-- Circle progress -->
+    <!-- Datatable -->
+    <script src="./vendor/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="./js/plugins-init/datatables.init.js"></script>
+
+</body>
+
+</html>

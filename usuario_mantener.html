@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Focus - Bootstrap Admin Dashboard </title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/logowh.png">
+    <link rel="stylesheet" href="./vendor/owl-carousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./vendor/owl-carousel/css/owl.theme.default.min.css">
+    <link href="./vendor/jqvmap/css/jqvmap.min.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+	
+
+
+</head>
+
+<body>
+
+    <!--*******************
+        Preloader start
+    ********************-->
+    <div id="preloader">
+        <div class="sk-three-bounce">
+            <div class="sk-child sk-bounce1"></div>
+            <div class="sk-child sk-bounce2"></div>
+            <div class="sk-child sk-bounce3"></div>
+        </div>
+    </div>
+    <!--*******************
+        Preloader end
+    ********************-->
+
+
+    <!--**********************************
+        Main wrapper start
+    ***********************************-->
+    <div id="main-wrapper">
+
+        <!--**********************************
+            Nav header start
+        ***********************************-->
+        <div class="nav-header">
+            <a href="index.html" class="brand-logo">
+                <img class="logo-abbr" src="./images/logowh.png" alt="">
+                <img class="logo-compact" src="./images/textwh.png" alt="">
+                <img class="brand-title" src="./images/textwh.png" alt="">
+            </a>
+
+            <div class="nav-control">
+                <div class="hamburger">
+                    <span class="line"></span><span class="line"></span><span class="line"></span>
+                </div>
+            </div>
+        </div>
+        <!--**********************************
+            Nav header end
+        ***********************************-->
+
+        <!--**********************************
+            Header start
+        ***********************************-->
+        <div class="header">
+            <div class="header-content">
+                <nav class="navbar navbar-expand">
+                    <div class="collapse navbar-collapse justify-content-between">
+                        <div class="header-left">
+                            <div class="search_bar dropdown">
+                                <span class="search_icon p-3 c-pointer" data-toggle="dropdown">
+                                    <i class="mdi mdi-magnify"></i>
+                                </span>
+                                <div class="dropdown-menu p-0 m-0">
+                                    <form>
+                                        <input class="form-control" type="search" placeholder="Search"
+                                            aria-label="Search">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <ul class="navbar-nav header-right">
+                           
+                            <li class="nav-item dropdown header-profile">
+                                <a class="nav-link" href="#" role="button" data-toggle="dropdown">
+                                    <i class="mdi mdi-account"></i>
+                                </a>
+                                 <div class="dropdown-menu dropdown-menu-right">
+								     <a href="./page-login.html" class="dropdown-item">
+                                        <i class="icon-key"></i>
+                                        <span class="ml-2">Logout </span>
+                                    </a>
+									<a href="./usuario_registrar.html" class="dropdown-item">
+                                        <i class="icon icon-single-copy-06"></i>
+                                        <span class="ml-2">Registro Usuarios </span>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!--**********************************
+            Header end ti-comment-alt
+        ***********************************-->
+
+         <!--**********************************
+            Sidebar start
+        ***********************************-->
+        <div class="quixnav">
+            <div class="quixnav-scroll">
+                <ul class="metismenu" id="menu">
+                    <li class="nav-label first">Administración</li>
+                    <!-- <li><a href="index.html"><i class="icon icon-single-04"></i><span class="nav-text">Dashboard</span></a>
+                    </li> -->
+                    <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
+                                class="icon icon-phone-2"></i><span class="nav-text">Sesión</span></a>
+                        <ul aria-expanded="false">
+                            <li><a href="./page-login.html">Login</a></li>
+                            <li><a href="./page-lock-screen.html">Logout</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
+                                class="icon icon-single-04"></i><span class="nav-text">Usuarios</span></a>
+                        <ul aria-expanded="false">
+                            <li><a href="./usuario_registrar.html">Nuevo</a></li>
+                            <li><a href="./usuario_mantener.html">Modificar</a></li>
+                        </ul>
+                    </li>
+                    <!--<li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
+                                class="icon icon-l-settings"></i><span class="nav-text">Roles</span></a>
+                        <ul aria-expanded="false">
+                            <li><a href="./index.html">Actualizar</a></li>
+                            <li><a href="./index2.html">Listar</a></li>
+                        </ul>
+                    </li>-->
+
+                    <li class="nav-label">Configuración</li>
+                    <li><a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon icon-app-store"></i>
+                            <span class="nav-text">Productos</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="./productos_crear.html">Nuevo</a></li>
+                            <li><a href="./productos_mantener.html">Modificar</a></li>
+                            <li><a href="./productos_listar.html">Listar</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
+                                class="icon icon-users-mm-2"></i><span class="nav-text">Cliente - Proveedor</span></a>
+                        <ul aria-expanded="false">
+                            <li><a href="./clientes_crear.html">Nuevo</a></li>
+                            <li><a href="./clientes_mantener.html">Modificar</a></li>
+                            <li><a href="./clientes_listar.html">Listar</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
+                                class="icon icon-cart-simple"></i><span class="nav-text">Zona Almacenamiento</span></a>
+                        <ul aria-expanded="false">
+                            <li><a href="./ubicacion_crear.html">Nuevo</a></li>
+                            <li><a href="./ubicacion_mantener.html">Modificar</a></li>
+                            <li><a href="./ubicacion_listar.html">Listar</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-label">Gestión</li>
+                    <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
+                                class="icon icon-cloud-download-95"></i><span class="nav-text">Entradas</span></a>
+                        <ul aria-expanded="false">
+                            <li><a href="./remision_ent_crear.html">Nuevo</a></li>
+                            <li><a href="./remision_ent_listar.html">Listar</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
+                                class="icon icon-send"></i><span class="nav-text">Salidas</span></a>
+                        <ul aria-expanded="false">
+                            <li><a href="./remision_sal_crear.html">Nuevo</a></li>
+                            <li><a href="./remision_sal_listar.html">Listar</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
+                                class="icon icon-world-2"></i><span class="nav-text">Despachos</span></a>
+                        <ul aria-expanded="false">
+                            <li><a href="./despachos_crear.html">Nuevo</a></li>
+                            <li><a href="./despachos_listar.html">Listar</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--**********************************
+            Sidebar end
+        ***********************************-->
+
+        <!--**********************************
+            Content body start
+        ***********************************-->		
+	<div class="content-body">
+		<div class="container-fluid">
+			<div class="row page-titles mx-0">
+				<div class="col-sm-6 p-md-0">
+				    <div class="welcome-text">
+						<h4 class="card-title">Actualizar Usuarios</h4>
+						<span class="ml-1">Usuarios</span>
+					</div>
+				</div>
+				<div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><a href="javascript:void(0)">Table</a></li>
+						<li class="breadcrumb-item active"><a href="javascript:void(0)">Actualizar</a></li>
+					</ol>
+				</div>
+			</div>
+		
+			<!-- row -->
+	
+		<div class="row">
+			<div class="col-12">
+				<div class="card">
+						<div class="card-header">
+						</div>
+                            <div class="card-body">
+								 <div class="table-responsive">
+                                    <table id="example2" class="display" style="width:100%">
+									
+									<thead>
+										<tr>
+										    <th >USUARIO</th>
+											<th >IDENTIFICACION</th>
+											<th >NOMBRE</th>
+											<th >APELLIDO</th>
+											<th >EMAIL</th>
+											<th >PASSWORD</th>
+											<th >ESTADO</th>
+											<th >ROL</th>
+											<th></th>
+											<th></th>
+										</tr>
+									</thead>
+									
+										<tr>
+											<td >Usuario</td>
+											<td >Identification</td>
+											<td >Nombre</td>
+											<td >Apellido</td>
+											<td >Email</td>
+											<td >Password</td>
+											<td >Estado</td>
+											<td >Rol</td>
+											<td>
+											<button type="button" class="btn btn-primary btn-sm"  title="editar" ><ion-icon name="pencil-outline" size = "small" ></ion-icon></button>
+											</td>
+											<td>
+											<button type="button" class="btn btn-danger btn-sm" title="borrar"><ion-icon name="trash-outline" size = "small" ></ion-icon></button>
+											</td>
+										</tr>
+									</table> 
+							   </div>	
+						    </div>
+				</div>
+            </div>	
+        </div>
+	</div>
+	
+	
+
+<!--**********************************
+            Footer start
+        ***********************************-->
+        <div class="footer">
+            <div class="copyright">
+                <p>Copyright © Designed &amp; Developed by <a href="#" target="_blank">Quixkit</a> 2019</p>
+            </div>
+        </div>
+        <!--**********************************
+            Footer end
+        ***********************************-->
+  
+  
+ 
+  <!--**********************************
+        Scripts
+    ***********************************-->
+    <!-- Required vendors -->
+    <script src="./vendor/global/global.min.js"></script>
+    <script src="./js/quixnav-init.js"></script>
+    <script src="./js/custom.min.js"></script>
+	<script  type = "module"  src = "https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" > </ script > 
+    <script  nomodule  src = "https: // unpkg .com / ionicons @ 5.5.2 / dist / ionicons / ionicons.js " > </ script >
+
+    <script src="./vendor/highlightjs/highlight.pack.min.js"></script>
+    <!-- Circle progress -->
+	   <!-- Datatable -->
+    <script src="./vendor/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="./js/plugins-init/datatables.init.js"></script>
+	
+  </body>
+</html> 
